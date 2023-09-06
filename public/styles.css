@@ -1,0 +1,116 @@
+body{
+    line-height: 1.6;
+    background-color: bisque;
+}
+h1{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 10px 0;
+    background-color: #f4b6b6;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+
+:root{
+    --white: #ddd;
+    --dark: #111;
+    --darkGrey: #474b4f;
+    --lightGrey: #6b6e70;
+    --lightGreen: #86c232;
+    --darkGreen: #61892f;
+    --transition: all 0.5s ease;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/********************** Utility Classes *******************/
+
+.container-about{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mergeButton{
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #86c232;
+  transition: var(--transition);
+}
+
+
+.brand-and-navBtn{
+    font-weight: 400;
+    font-size: 27px;
+    padding: 15px 25px;
+}
+.brand-name{
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.top-nav ul a{
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+.top-nav ul a::after{
+    content: "";
+    height: 2px;
+    background: var(--lightGreen);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    transition: var(--transition);
+}
+
+.about{
+    margin-top: 160px;
+}
+
+.footer{
+    background: var(--dark);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer > p{
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 992px){
+    .about{
+        margin-top: 10;
+    }
+}

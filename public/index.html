@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Merger</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav-section">
+      <div class="brand-and-navBtn">
+        <span class="brand-name">
+          PDF MERGER
+        </span>
+      </div>
+    </div>
+    <div class="container-about">
+      <div>
+        <h1> Merge PDF files </h1>
+        <h2>Combine PDFs into only one file.</h2>
+      </div>
+      <input type="file" id="pdfFiles" multiple accept=".pdf">
+      <button id="mergeButton">Merge PDFs</button>
+      <a id="downloadLink" href="#" download="merged.pdf" style="display: none;">Download Merged PDF</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
